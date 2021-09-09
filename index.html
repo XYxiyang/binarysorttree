@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="class.js"></script>
+    <script type="text/javascript" src="drawtree.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <title>Binary Sort Tree</title>
+
+
+    <style type="text/css">
+        body {
+            background: #9494b9
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 align="center">数据结构课设</h1>
+    <h2 align="center">二叉排序树</h2>
+
+    <div style="text-align:center; vertical-align:middel;">
+        <div class="ui huge action input">
+            <input type="text" placeholder="输入数据,英文逗号分隔" id="input">
+            <button class="ui button" onclick="createTree()">生成二叉排序树</button>
+        </div>
+    </div>
+
+    <canvas id="canvas" style="display: block; margin: 0 auto;"></canvas>
+
+
+    <div style="text-align:center; vertical-align:middel;">
+        <div class="ui huge action input">
+            <input type="text" placeholder="插入单个节点" id="insert">
+            <button class="ui button" onclick="insertNode()" id='insertbutton'>增加节点</button>
+        </div>
+    </div>
+    <h3></h3>
+    <div style="text-align:center; vertical-align:middel;">
+        <div class="ui huge action input">
+            <input type="text" placeholder="删除单个节点" id="delete">
+            <button class="ui button" onclick="deleteNode()" id='deletebutton'>删除节点</button>
+        </div>
+    </div>
+    <p align="center" id="tips"></p>
+</body>
